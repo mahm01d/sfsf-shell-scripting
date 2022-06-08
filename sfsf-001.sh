@@ -5,17 +5,19 @@ user=$(whoami)
 date=$(date)
 locate=$(pwd)
 #yourbash=$(bash)
-        echo "good morning ya $user"
-        sleep 1
+        
+		
+	echo -e "\agood morning ya $user"
+        	sleep 3
 
-        echo "you're looking great today $user"
-        sleep 1
+        echo -e "\ayou're looking great today $user"
+        	sleep 3
 
-	echo "today is $date"
-	sleep 1
+	echo -e "\atoday is $date"
+		sleep 3
 
-	echo "your working directory is $locate"
-
+	echo -e  "\ayour working directory is $locate"
+		sleep 3 
 
 
 #clear
