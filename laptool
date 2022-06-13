@@ -1,0 +1,31 @@
+#!/bin/bash
+
+##-p option for mkdir to skip the parents error
+#to creat directory under not existing directory
+	echo "--------------TASK---1------------------------->"
+		mkdir -p /tmp/files/photos /tmp/files/pictures /tmp/files/videos
+		sleep 2
+		ls -d  /tmp/files/* 
+#the -d option here is to list only the directory itself and * to ensure that directories are existed	
+	echo "creating directorise done (TASK1) ->>>" 
+	echo "---------TASK--------2------------------------->"
+	## to copy the files starts with a or b or c 
+		cp /etc/[a,b,c]*  /tmp/files 2>/dev/null
+## the command will show an error message
+  ## like cp: -r not specified; omitting directory 
+    ## IDK what is the reason for that error message
+      ## but i will redirect th error messages to /dev/null by STDerror>/dev/null
+      	echo "copying the files done (TASK2)"
+	 echo "--------TASK--->->->->-3--------------------->"
+       		mv  /tmp/files/[a,b]* /tmp/files/photos
+ 		mv /tmp/files/[c]* /tmp/files/videos
+		echo "moving the files done"
+
+	echo "--------TASK--->->->->-4--------------------->"
+	find /etc  -type f -size 999c
+	echo "listing file less than 1000 bytes done"
+	echo "--------TASK--->->->->-5--------------------->"
+	
+	#the option -s is for creating symbolic link
+	ln -s /tmp/files /var
+	echo "done"
