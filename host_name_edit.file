@@ -1,0 +1,5 @@
+#!/bin/bash
+echo  "editing hostname to safa"
+echo "SFSF" > /etc/hostname 
+echo "******  done ******"
+	
