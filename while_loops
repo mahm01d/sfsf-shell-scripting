@@ -1,0 +1,14 @@
+#!/bin/bash
+#difining n as 1
+
+n=1
+#this code prints 123 if n is less than 10
+while [ $n -le 10 ]
+do 
+	echo 123
+	sleep 1
+
+#this for ending the while loop by adding 1 to n everytime code showes 123 that means after 10 times the while loop will stop
+
+	n=$(( n+1 ))
+done
