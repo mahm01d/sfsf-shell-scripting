@@ -1,0 +1,21 @@
+#!/bin/bash
+#written by github.com/mahm01d
+#this script will change your default shell to /bin/bash
+#using chsh "change shell"
+#which bash
+
+#user=$(whoami)
+
+#this is to view that line next line to the screen
+echo "changing $USER  shell,s to /bin/bash"
+
+#this next command is to change the shell to the current user to /bin/bash
+#the option -s is for --shell 
+chsh -s /bin/bash
+
+#the next line is to define the output of command to the vraiable defbash
+defbash=$(which bash)
+
+#to ensure that the change takes place
+#the next command is to view the output of the vriable $defbash that we defined before 
+echo your defualt shell is $defbash 

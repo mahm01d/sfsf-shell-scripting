@@ -1,0 +1,11 @@
+#!/bin/bash
+
+##this is script for using
+echo "welcome $USER"
+	sleep 02
+		echo  "please enter the username -->"
+		read userin
+		chsh -s  $userin
+if 
+
+
