@@ -1,0 +1,59 @@
+root:x:0:0:root:/root:/bin/bash
+bin:x:1:1:bin:/bin:/sbin/nologin
+daemon:x:2:2:daemon:/sbin:/sbin/nologin
+adm:x:3:4:adm:/var/adm:/sbin/nologin
+lp:x:4:7:lp:/var/spool/lpd:/sbin/nologin
+sync:x:5:0:sync:/sbin:/bin/sync
+shutdown:x:6:0:shutdown:/sbin:/sbin/shutdown
+halt:x:7:0:halt:/sbin:/sbin/halt
+mail:x:8:12:mail:/var/spool/mail:/sbin/nologin
+operator:x:11:0:operator:/root:/sbin/nologin
+games:x:12:100:games:/usr/games:/sbin/nologin
+ftp:x:14:50:FTP User:/var/ftp:/sbin/nologin
+nobody:x:65534:65534:Kernel Overflow User:/:/sbin/nologin
+apache:x:48:48:Apache:/usr/share/httpd:/sbin/nologin
+dbus:x:81:81:System message bus:/:/sbin/nologin
+systemd-network:x:192:192:systemd Network Management:/:/usr/sbin/nologin
+systemd-oom:x:999:999:systemd Userspace OOM Killer:/:/usr/sbin/nologin
+systemd-resolve:x:193:193:systemd Resolver:/:/usr/sbin/nologin
+systemd-timesync:x:998:998:systemd Time Synchronization:/:/usr/sbin/nologin
+systemd-coredump:x:997:997:systemd Core Dumper:/:/usr/sbin/nologin
+tss:x:59:59:Account used for TPM access:/dev/null:/sbin/nologin
+polkitd:x:996:996:User for polkitd:/:/sbin/nologin
+avahi:x:70:70:Avahi mDNS/DNS-SD Stack:/var/run/avahi-daemon:/sbin/nologin
+nm-openconnect:x:995:993:NetworkManager user for OpenConnect:/:/sbin/nologin
+usbmuxd:x:113:113:usbmuxd user:/:/sbin/nologin
+unbound:x:994:992:Unbound DNS resolver:/etc/unbound:/sbin/nologin
+rtkit:x:172:172:RealtimeKit:/proc:/sbin/nologin
+pipewire:x:993:991:PipeWire System Daemon:/var/run/pipewire:/sbin/nologin
+geoclue:x:992:990:User for geoclue:/var/lib/geoclue:/sbin/nologin
+dnsmasq:x:991:988:Dnsmasq DHCP and DNS server:/var/lib/dnsmasq:/sbin/nologin
+chrony:x:990:987::/var/lib/chrony:/sbin/nologin
+rpc:x:32:32:Rpcbind Daemon:/var/lib/rpcbind:/sbin/nologin
+openvpn:x:989:986:OpenVPN:/etc/openvpn:/sbin/nologin
+nm-openvpn:x:988:985:Default user for running openvpn spawned by NetworkManager:/:/sbin/nologin
+colord:x:987:984:User for colord:/var/lib/colord:/sbin/nologin
+abrt:x:173:173::/etc/abrt:/sbin/nologin
+flatpak:x:986:983:User for flatpak system helper:/:/sbin/nologin
+gdm:x:42:42::/var/lib/gdm:/sbin/nologin
+gnome-initial-setup:x:985:982::/run/gnome-initial-setup/:/sbin/nologin
+rpcuser:x:29:29:RPC Service User:/var/lib/nfs:/sbin/nologin
+vboxadd:x:984:1::/var/run/vboxadd:/sbin/nologin
+sshd:x:74:74:Privilege-separated SSH:/usr/share/empty.sshd:/sbin/nologin
+tcpdump:x:72:72::/:/sbin/nologin
+mahmoud:x:1000:1000:mahmoud mohamed:/home/mahmoud:/bin/bash
+gluster:x:983:979:GlusterFS daemons:/run/gluster:/sbin/nologin
+radvd:x:75:75:radvd user:/:/sbin/nologin
+qemu:x:107:107:qemu user:/:/sbin/nologin
+saslauth:x:982:76:Saslauthd user:/run/saslauthd:/sbin/nologin
+_apt:x:981:976:APT account for owning persistent & cache data:/var/lib/apt:/sbin/nologin
+dhcpd:x:177:177:DHCP server:/:/sbin/nologin
+lighttpd:x:980:975:lighttpd web server:/var/www/lighttpd:/sbin/nologin
+vnstat:x:979:974:vnStat user:/var/lib/vnstat:/sbin/nologin
+akmods:x:978:972:User is used by akmods to build akmod packages:/var/cache/akmods/:/sbin/nologin
+anna:x:1001:1001::/home/anna:/bin/bash
+audrey:x:1002:1002::/home/audrey:/bin/bash
+lisa:x:1003:1003::/home/lisa:/bin/bash
+sddm:x:977:970:Simple Desktop Display Manager:/var/lib/sddm:/sbin/nologin
+setroubleshoot:x:976:969:SELinux troubleshoot server:/var/lib/setroubleshoot:/sbin/nologin
+mysql:x:27:27:MySQL Server:/var/lib/mysql:/sbin/nologin

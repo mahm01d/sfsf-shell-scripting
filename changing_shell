@@ -4,18 +4,42 @@
 #using chsh "change shell"
 #which bash
 
+echo "#########################################################"
+echo "this script will change your default shell to /bin/bash"
+echo "##########################################################"
+echo "                          *** loading  *** "    
+
+    sleep 1 
+echo -e "\n" ; echo -e "\n"
+echo "              ###########################" ;                      #sleep 1    ;clear
+echo "              |||       written by:   |||" ;                      #sleep 1    ;clear
+echo "              |||  github.com/mahm01d |||" ;                      #sleep 1    ;clear
+echo "              ###########################" ;                      #sleep 1    ;clear
+sleep 3 
+#define username to change 
+echo welcome $USER
+echo "please enter user name"
+read userdef
+chsh --shell /bin/bash $userdef
+
+cat /etc/passwd | grep $userdef 
+
+
+
+
+
 #user=$(whoami)
 
 #this is to view that line next line to the screen
-echo "changing $USER  shell,s to /bin/bash"
+#echo "changing $USER  shell,s to /bin/bash"
 
 #this next command is to change the shell to the current user to /bin/bash
 #the option -s is for --shell 
-chsh -s /bin/bash
+#chsh -s /bin/bash
 
 #the next line is to define the output of command to the vraiable defbash
-defbash=$(which bash)
+#defbash=$(which bash)
 
 #to ensure that the change takes place
 #the next command is to view the output of the vriable $defbash that we defined before 
-echo your defualt shell is $defbash 
+echo your defualt shell is $defbash

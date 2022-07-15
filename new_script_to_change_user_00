@@ -5,7 +5,20 @@ echo "welcome $USER"
 	sleep 02
 		echo  "please enter the username -->"
 		read userin
-		chsh -s  $userin
-if 
+
+		echo "the new shell is ->"
+		cat /etc/passwd |tee| grep $userin | cut -d : -f 7
+
+#		chsh -s  $userin 
 
 
+#greatings  
+dateis=$(date | cut -d' ' -f 5)
+if [ $dateis == PM ]
+
+	then 
+	echo "good evening $USER"
+	elif [$dateis == AM] 
+	then
+	echo "good morning $USER"
+fi
